@@ -35,7 +35,7 @@ public class Main {
             e.getStackTrace();
             System.exit(-1); // プログラムを終了
         }
-        Z.dealer2(dealer);
+        dealer  = Z.dealer2(dealer);
         Z.judge(dealer,player);
     }
 }

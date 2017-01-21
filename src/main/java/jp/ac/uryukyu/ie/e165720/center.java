@@ -55,9 +55,9 @@ public class center {
         else if(dealer > 22){
             System.out.print("バースト！プレイヤーの勝ち\n");
         }
-        else if(dealer < player&&player <22){
+        else if((dealer < player)&&(player <22)){
             System.out.print("プレイヤーの勝ち\n");
-        }else if(22>dealer&&dealer > player){//21を超えるとバーストになるので22以下の条件をつけている
+        }else if((22>dealer)&&(dealer > player)){//21を超えるとバーストになるので22以下の条件をつけている
             System.out.print("ディーラーの勝ち\n");
         }else if(dealer == player){
             System.out.print("引き分け\n");
@@ -95,7 +95,7 @@ public class center {
             s = deal();
             dealer += s;
             System.out.printf("%d枚目を追加しました\n",i+2);
-            System.out.printf("%枚目のカードは%d",i+2,s);
+            System.out.printf("%d枚目のカードは%d\n",i+2,s);
             System.out.printf("合計＝%dでした\n",dealer);
 
         }
