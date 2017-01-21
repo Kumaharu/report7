@@ -2,9 +2,7 @@ package jp.ac.uryukyu.ie.e165720;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
-/**
- * Created by e165720 on 2017/01/17.
- */
+
 public class Main {
     public static void main(String[] args){
         int dealer;
