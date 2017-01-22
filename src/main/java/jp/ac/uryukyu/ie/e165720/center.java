@@ -49,15 +49,15 @@ public class center {
 
     //勝敗を決めるメソッド
     public static void judge(int dealer,int player){
-        if(player > 22){
+        if(player > 21){
             System.out.print("バースト！ディーラーの勝ち\n");
         }
-        else if(dealer > 22){
+        else if(dealer > 21){
             System.out.print("バースト！プレイヤーの勝ち\n");
         }
-        else if((dealer < player)&&(player <22)){
+        else if(dealer < player){
             System.out.print("プレイヤーの勝ち\n");
-        }else if((22>dealer)&&(dealer > player)){//21を超えるとバーストになるので22以下の条件をつけている
+        }else if(dealer > player){//21を超えるとバーストになるので22以下の条件をつけている
             System.out.print("ディーラーの勝ち\n");
         }else if(dealer == player){
             System.out.print("引き分け\n");
